@@ -3,9 +3,10 @@
 name: Create Branch From Issue
 
 # Controls when the workflow will run
-on: 
+on:
   issues:
-    - opened
+    types:
+      - opened
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
